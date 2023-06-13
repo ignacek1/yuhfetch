@@ -1,0 +1,31 @@
+name: Python CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: pip install unittest
+
+    - name: Run tests
+      run: python -m unittest discover
+
+    - name: Upload test coverage
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: coverage/
