@@ -8,3 +8,7 @@ A simple fetching program written in Python
 ```bash
 pip install -r requirements.txt
 ```
+### To install yuhfetch run:
+```bash
+make install
+```
