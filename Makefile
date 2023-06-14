@@ -3,3 +3,8 @@ install:
 	chmod +x /usr/bin/yuhfetch
 reinstall:
 	make install
+install-termux:
+	cp src/main.termux.py /data/data/com.termux/files/usr/bin/yuhfetch 
+	chmod +x /usr/bin/yuhfetch
+reinstall-termux:
+	make install-termux
