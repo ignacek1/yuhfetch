@@ -14,7 +14,7 @@ NC = '\033[0m'
 
 print("    .--.")
 print(f"   |o_o |    {purple}OS:        {NC}{distro.name()}")
-print(f"   |:_/ |    {blue}Kernel:    {NC}{subprocess.getoutput('uname -a')}")
+print(f"   |:_/ |    {blue}Kernel:    {NC}{subprocess.getoutput('uname -r')}")
 print(f"  //   \ \   {green}Username:  {NC}{subprocess.getoutput('whoami')}")
 print(f"/'\_   _/`\\  {red}Hostname:  {NC}{subprocess.getoutput('hostname')}")
 print(f"\\___)=(___/")
