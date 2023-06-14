@@ -19,7 +19,7 @@ jobs:
         python-version: 3.8
 
     - name: Run tests
-      run: python -m unittest discover
+      run: python -m unittest discover src/main.py
 
     - name: Upload test coverage
       uses: actions/upload-artifact@v2
