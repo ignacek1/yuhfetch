@@ -12,3 +12,6 @@ pip install -r requirements.txt
 ```bash
 make install
 ```
+### Args:
+- -v and --version:
+prints the version, works only in the yuhfetch's src directory.
