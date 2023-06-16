@@ -17,6 +17,11 @@ NC = '\033[0m'
 if len(sys.argv) > 1 and sys.argv[1] == "-v" or len(sys.argv) > 1 and sys.argv[1] == "--version":
     with open("./version.txt") as v:
         print(v.read().strip())
+elif len(sys.argv) > 1 and sys.argv[1] == "--noasciiart":
+    print(f"{purple}Distro:{NC} {distro.name()}")
+    print(f"{blue}Kernel: {NC}{subprocess.getoutput('uname -s -r')}")
+    print(f"{green}Username: {NC}{subprocess.getoutput('whoami')}")
+    print(f"{red}Hostname: {NC}{subprocess.getoutput('hostname')}")
 else:
     print("    .--.")
     print(f"   |o_o |    {purple}Distro:    {NC}{distro.name()}")
