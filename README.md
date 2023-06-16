@@ -17,5 +17,5 @@ make install
 prints the version, works only in the yuhfetch's src directory.
 - --noasciiart:
 prints the data with no ascii art
-- --asciionly:
+- --asciiartonly:
 prints only the ascii art with no data
