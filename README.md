@@ -15,3 +15,5 @@ make install
 ### Args:
 - -v and --version:
 prints the version, works only in the yuhfetch's src directory.
+- --noasciiart:
+prints the data with no ascii art
