@@ -22,6 +22,13 @@ elif len(sys.argv) > 1 and sys.argv[1] == "--noasciiart":
     print(f"{blue}Kernel: {NC}{subprocess.getoutput('uname -s -r')}")
     print(f"{green}Username: {NC}{subprocess.getoutput('whoami')}")
     print(f"{red}Hostname: {NC}{subprocess.getoutput('hostname')}")
+elif len(sys.argv) > 1 and sys.argv[1] == "--asciionly":
+    print("    .--.")
+    print(f"   |o_o |")
+    print(f"   |:_/ |")
+    print(f"  //   \ \ ")
+    print(f"/'\_   _/`\\ ")
+    print(f"\\___)=(___/")
 else:
     print("    .--.")
     print(f"   |o_o |    {purple}Distro:    {NC}{distro.name()}")
