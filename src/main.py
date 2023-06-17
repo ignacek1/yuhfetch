@@ -25,14 +25,14 @@ elif len(sys.argv) > 1 and "--noasciiart" in sys.argv[1]:
 elif len(sys.argv) > 1 and "--asciiartonly" in sys.argv[1]:
     print("    .--.")
     print(f"   |o_o |")
-    print(f"   |:_/ |")
+    print(f"   |{yellow}:_/{NC} |")
     print(f"  //   \ \ ")
     print(f"/'\_   _/`\\ ")
-    print(f"\\___)=(___/")
+    print(f"\\{yellow}___{NC})=({yellow}___{NC}/")
 else:
     print("    .--.")
     print(f"   |o_o |    {purple}Distro:    {NC}{distro.name()}")
-    print(f"   |:_/ |    {blue}Kernel:    {NC}{subprocess.getoutput('uname -s -r')}")
+    print(f"   |{yellow}:_/{NC} |    {blue}Kernel:    {NC}{subprocess.getoutput('uname -s -r')}")
     print(f"  //   \ \   {green}Username:  {NC}{subprocess.getoutput('whoami')}")
     print(f"/'\_   _/`\\  {red}Hostname:  {NC}{subprocess.getoutput('hostname')}")
-    print(f"\\___)=(___/")
+    print(f"\\{yellow}___{NC})=({yellow}___{NC}/")
