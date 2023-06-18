@@ -1,6 +1,6 @@
 # yuhfetch
 
-![preview](src/assets/preview.png)
+![preview](https://i.imgur.com/A7lUe7y.png)
 
 A simple fetching program written in Python
 
