@@ -4,6 +4,10 @@
 
 ---
 
+![preview](https://i.imgur.com/Xg5GukG.png)
+
+---
+
 A simple fetching program written in Python
 
 ---
