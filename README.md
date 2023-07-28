@@ -2,7 +2,11 @@
 
 ![preview](https://i.imgur.com/A7lUe7y.png)
 
+---
+
 A simple fetching program written in Python
+
+---
 
 ### Install the requirements:
 ```bash
@@ -12,6 +16,9 @@ pip install -r requirements.txt
 ```bash
 make install
 ```
+
+---
+
 ### Args:
 - -v and --version:
 prints the version, works only in the yuhfetch's src directory.
