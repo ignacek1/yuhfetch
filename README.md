@@ -1,6 +1,6 @@
 # yuhfetch
 
-![preview](https://i.imgur.com/A7lUe7y.png)
+![preview](src/assets/preview.png)
 
 ---
 
