@@ -14,13 +14,15 @@ cyan = '\033[0;36m'
 white = '\033[0;37m'
 NC = '\033[0m'
 
+if os.path.exists("./version.txt"):
+    with open("./version.txt") as vfile:
+        v = vfile.read().strip()
+else:
+    with open("/etc/yuhfetch/version") as vfile:
+        v = vfile.read().strip()
+
 if len(sys.argv) > 1 and sys.argv[1] == "-v" or len(sys.argv) > 1 and sys.argv[1] == "--version":
-    if os.path.exists("./version.txt"):
-        with open("./version.txt") as v:
-            print(v.read().strip())
-    else:
-        with open("/etc/yuhfetch/version") as v:
-            print(v.read().strip())
+    print(v)
 elif len(sys.argv) > 1 and "--noasciiart" in sys.argv[1]:
     print(f"{purple}Distro:{NC} {distro.name()}")
     print(f"{blue}Kernel: {NC}{subprocess.getoutput('uname -s -r')}")
