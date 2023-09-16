@@ -30,3 +30,5 @@ prints the version, needs yuhfetch to be installed with make or be in the yuhfet
 prints the data with no ascii art
 - --asciiartonly:
 prints only the ascii art with no data
+- --nocolors:
+prints the data without any colors
