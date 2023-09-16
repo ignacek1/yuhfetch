@@ -35,10 +35,18 @@ elif len(sys.argv) > 1 and "--asciiartonly" in sys.argv[1]:
     print(f"  //   \ \ ")
     print(f"/'\_   _/`\\ ")
     print(f"\\{yellow}___{NC})=({yellow}___{NC}/")
+elif len(sys.argv) > 1 and "--nocolors" in sys.argv[1]:
+    print("    .--.")
+    print(f"   |o_o |    Distro:    {distro.name()}")
+    print(f"   |:_/ |    Kernel:    {subprocess.getoutput('uname -s -r')}")
+    print(f"  //   \ \   Username:  {subprocess.getoutput('whoami')}")
+    print(f"/'\_   _/`\\  Hostname:  {subprocess.getoutput('hostname')}")
+    print(f"\\___)=(___/")
 elif len(sys.argv) > 1 and "--help" or len(sys.argv) > 1 and "-h":
     print("""-v and --version: prints the version, needs yuhfetch to be installed with make or be in the yuhfetch's src directory.
 --noasciiart: prints the data with no ascii art
---asciiartonly: prints only the ascii art with no data""")
+--asciiartonly: prints only the ascii art with no data
+--nocolors: prints the data without any colors""")
 else:
     print("    .--.")
     print(f"   |o_o |    {purple}Distro:    {NC}{distro.name()}")
