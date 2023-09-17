@@ -20,7 +20,10 @@ pip install -r requirements.txt
 ```bash
 make install
 ```
-
+### Or if you're on Arch or Arch based:
+```
+makepkg -si
+```
 ---
 
 ### Args:
