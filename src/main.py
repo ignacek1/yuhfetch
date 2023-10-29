@@ -40,7 +40,7 @@ elif len(sys.argv) > 1 and "--nocolors" in sys.argv[1]:
     print(f"   |o_o |    Distro:    {distro.name()}")
     print(f"   |:_/ |    Kernel:    {subprocess.getoutput('uname -s -r')}")
     print(f"  //   \ \   Username:  {subprocess.getoutput('whoami')}")
-    print(f"/'\_   _/`\\  Hostname:  {subprocess.getoutput('hostname')}")
+    print(f"/'\_   _/`\\  Hostname:  {subprocess.getoutput('cat /etc/hostname')}")
     print(f"\\___)=(___/")
 elif len(sys.argv) > 1 and "--help" or len(sys.argv) > 1 and "-h":
     print("""-v and --version: prints the version, needs yuhfetch to be installed with make or be in the yuhfetch's src directory.
